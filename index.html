@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+		<head>
+			<meta charset="utf-8">
+			<title>Volunteer Form</title>
+		</head>
+		
+		<body>
+		<h1>Volunteer Form</h1>
+			<fieldset>
+				<form>
+					<form method="POST" autocomplete="on" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+		<h3>My Info</h3>
+				<label>First Name:<input type="text" first_name_field="variable"></label>
+				<p><label>Last Name:<input type="text" last_name_field="variable"></label></p>
+				<p><label>Phone Number:<input type="text" phone_field="variable"></label></p>
+				<p><label>Email Address:<input type="text" email_field="variable"></label></p>
+				<p><label>Gender:</label>
+					<label>Male <input type="radio" name="gender_field" value="Male"></label>
+					<label>Female <input type="radio" name="gender_field" value="Female"></label></p>
+				<p><label>Age:</label>
+				<select name="age_field">
+					<option selected="under 18">under 18</option>
+					<option selected="18 - 24">18 - 24</option>
+					<option selected="25 - 34">25 - 34</option>
+					<option selected="35 - 44">35 - 44</option>
+					<option selected="45 - 54">45 - 54</option>
+					<option selected="55 - 64">55 - 64</option>
+					<option selected="65 and over">65 and over</option>
+				</select>	
+			</fieldset>
+			
+		<h3>My Availability</h3>
+			<fieldset>
+				<label>Days Available:</label>
+				<p><label><input type="checkbox" name="available_field[]" value="thevalue"> Sunday</label></p>
+				<p><label><input type="checkbox" name="available_field[]" value="thevalue">Monday</label></p>
+				<p><label><input type="checkbox" name="available_field[]" value="thevalue">Tuesday</label></p>
+				<p><label><input type="checkbox" name="available_field[]" value="thevalue">Wednesday</label></p>
+				<p><label><input type="checkbox" name="available_field[]" value="thevalue">Thursday</label></p>
+				<p><label><input type="checkbox" name="available_field[]" value="thevalue">Friday</label></p>
+				<p><label><input type="checkbox" name="available_field[]" value="thevalue">Saturday</label></p>
+				
+				
+				
+				<p><label>Any Comments?</label></p>
+				<p><textarea comments_field="variable"></textarea></p>
+				<p><input type="hidden" name="hidden_field" value="tnikolova">
+			</fieldset>
+			<fieldset>
+				<input type="submit" value="Send Me">
+			</fieldset>
+				</form>
+		</body>
+</html>		
+
+ 
